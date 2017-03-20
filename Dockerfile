@@ -1,4 +1,4 @@
-FROM jenkins:2.32.3
+FROM jenkins:2.32.3-alpine
 
 ENV GOGS_BRANCH_SOURCE_VERSION=0.1-alpha
 
