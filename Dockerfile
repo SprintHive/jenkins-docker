@@ -19,9 +19,10 @@ COPY config/*.groovy /usr/share/jenkins/ref/init.groovy.d/
 # lets configure Jenkins with some defaults
 COPY config/*.xml /usr/share/jenkins/ref/
 
-# template replacement on the config.xml file
+# add config templates and script to resolve them into concrete configs
+COPY config/templates/*.tmpl /usr/share/jenkins/templates/
 COPY replace-env-vars.sh /usr/bin/replace-env-vars.sh
-COPY config/config.tmpl /usr/share/jenkins/templates/config.tmpl
+
 COPY run-jenkins.sh /run-jenkins.sh
 
 ENTRYPOINT ["/bin/tini", "-g", "--", "/run-jenkins.sh"]
