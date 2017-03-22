@@ -8,6 +8,7 @@
     <string>method io.fabric8.kubernetes.client.dsl.Listable list</string>
     <string>method groovy.json.JsonSlurper parse java.io.Reader</string>
     <string>method groovy.json.JsonSlurperClassic parse java.io.Reader</string>
+    <string>method groovy.json.JsonSlurperClassic parseText java.lang.String</string>
     <string>method groovy.lang.GString plus java.lang.String</string>
     <string>method groovy.lang.GroovyObject getProperty java.lang.String</string>
     <string>method io.fabric8.kubernetes.client.Client isAdaptable java.lang.Class</string>
@@ -135,7 +136,6 @@
     <string>method io.fabric8.openshift.api.model.BuildFluent editMetadata</string>
     <string>method io.fabric8.kubernetes.api.model.ObjectMetaFluent addToAnnotations java.lang.String java.lang.String</string>
     <string>method io.fabric8.openshift.api.model.BuildFluent$MetadataNested endMetadata</string>
-    <string>method groovy.json.JsonSlurperClassic parse java.io.Reader</string>
   </approvedSignatures>
   <aclApprovedSignatures>
   </aclApprovedSignatures>
