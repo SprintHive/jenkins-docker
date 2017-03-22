@@ -3,6 +3,7 @@
   <approvedScriptHashes>
   </approvedScriptHashes>
   <approvedSignatures>
+    <string>method java.lang.Class isInstance java.lang.Object</string>
     <string>method io.fabric8.kubernetes.api.model.KubernetesResourceList getItems</string>
     <string>method io.fabric8.kubernetes.client.dsl.KubernetesDSL nodes</string>
     <string>method io.fabric8.kubernetes.client.dsl.Listable list</string>
