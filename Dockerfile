@@ -1,11 +1,7 @@
-FROM jenkins:2.32.3-alpine
-
-ENV GOGS_BRANCH_SOURCE_VERSION=0.1-alpha
+FROM jenkins/jenkins:lts-alpine
 
 COPY plugins.txt /usr/share/jenkins/plugins.txt
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
-
-RUN curl -Lo /usr/share/jenkins/ref/plugins/gogs-branch-source-$GOGS_BRANCH_SOURCE_VERSION.hpi https://github.com/kmadel/gogs-branch-source-plugin/releases/download/v$GOGS_BRANCH_SOURCE_VERSION/gogs-branch-source-$GOGS_BRANCH_SOURCE_VERSION.hpi
 
 # copy custom built plugins
 COPY plugins/*.hpi /usr/share/jenkins/ref/plugins/

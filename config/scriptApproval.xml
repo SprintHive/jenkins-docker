@@ -3,6 +3,7 @@
   <approvedScriptHashes>
   </approvedScriptHashes>
   <approvedSignatures>
+    <string>staticMethod java.lang.String format java.lang.String java.lang.Object[]</string>
     <string>method java.lang.Class isInstance java.lang.Object</string>
     <string>method io.fabric8.kubernetes.api.model.KubernetesResourceList getItems</string>
     <string>method io.fabric8.kubernetes.client.dsl.KubernetesDSL nodes</string>
@@ -23,6 +24,7 @@
     <string>method io.fabric8.kubernetes.client.Client getNamespace</string>
     <string>method io.fabric8.kubernetes.client.KubernetesClient nodes</string>
     <string>method io.fabric8.kubernetes.client.KubernetesClient services</string>
+    <string>method io.fabric8.kubernetes.client.KubernetesClient persistentVolumeClaims</string>
     <string>method java.io.File toURL</string>
     <string>method java.io.File newOutputStream</string>
     <string>method java.io.File close</string>
@@ -62,6 +64,7 @@
     <string>method org.w3c.dom.NodeList item int</string>
     <string>method io.fabric8.openshift.client.OpenShiftClient imageStreams</string>
     <string>method io.fabric8.kubernetes.client.dsl.Nameable withName java.lang.String</string>
+    <string>method io.fabric8.kubernetes.client.dsl.Namespaceable inNamespace java.lang.String</string>
     <string>method io.fabric8.kubernetes.client.dsl.Gettable get</string>
     <string>method io.fabric8.openshift.api.model.ImageStream getStatus</string>
     <string>method io.fabric8.openshift.api.model.ImageStreamStatus getTags</string>
